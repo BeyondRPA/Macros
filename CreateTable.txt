@@ -1,0 +1,11 @@
+Sub FirstMacto()
+'
+' FirstMacto Macro
+' Creating Table
+'
+
+'
+    Range("A1").Select
+    ActiveSheet.ListObjects.Add(xlSrcRange, Range("$A$1:$C$3"), , xlYes).Name = _
+        "Table1"
+End Sub
